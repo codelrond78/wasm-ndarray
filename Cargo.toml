@@ -11,6 +11,8 @@ crate-type = ["cdylib", "rlib"]
 default = ["console_error_panic_hook"]
 
 [dependencies]
+#ndarray = "0.15.4"
+ndarray = {version = "0.15.4", features = ["serde"] }
 serde = { version = "1.0", features = ["derive"] }
 wasm-bindgen = { version = "0.2.63", features = ["serde-serialize"] }
 
